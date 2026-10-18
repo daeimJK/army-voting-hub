@@ -1,0 +1,223 @@
+/* Mobile interface v7 */
+.mobile-brand-v7{display:none}
+.mobile-route-line-v7{display:none}
+
+@media (max-width:900px){
+  html,body{overflow-x:hidden!important}
+  .shell{display:block!important;min-height:100vh!important}
+  .side{display:none!important}
+  .main{width:100%!important;max-width:none!important;padding:14px 14px calc(104px + env(safe-area-inset-bottom))!important}
+
+  .mobile-brand-v7{
+    display:grid;
+    grid-template-columns:42px 1fr 22px;
+    align-items:center;
+    gap:10px;
+    min-height:60px;
+    margin:0 0 14px;
+    padding:9px 12px;
+    border-radius:20px;
+    background:linear-gradient(180deg,rgba(9,31,59,.94),rgba(6,23,45,.96));
+    border:1px solid rgba(255,255,255,.07);
+    box-shadow:0 10px 24px rgba(0,0,0,.16);
+  }
+  .mobile-brand-mark{position:relative;width:42px;height:42px;border-radius:14px;background:linear-gradient(180deg,#e34a40,#c72f2c);box-shadow:0 4px 0 #872227}
+  .mobile-brand-mark span{position:absolute;top:9px;bottom:9px;width:10px;border-radius:3px;background:#f7efdc}
+  .mobile-brand-mark span:first-child{left:10px;transform:skewY(10deg)}
+  .mobile-brand-mark span:last-child{right:10px;transform:skewY(-10deg)}
+  .mobile-brand-copy{display:grid;gap:1px;min-width:0}
+  .mobile-brand-copy b{font-family:'Boldonse','Outfit',sans-serif;font-size:15px;line-height:1.08;font-weight:400;color:#fbf3e1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mobile-brand-copy small{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#8fa7c7}
+  .mobile-brand-stars{color:#f2c654;font-size:15px;text-align:right}
+
+  .topbar{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;gap:10px!important;align-items:start!important;margin-bottom:14px!important}
+  .topbar>div:first-child{min-width:0}
+  .eyebrow{font-size:9px!important;line-height:1.3!important;letter-spacing:.1em!important}
+  .title{font-size:clamp(28px,8vw,38px)!important;line-height:1.06!important;margin:5px 0 7px!important;overflow-wrap:anywhere}
+  .sub{font-size:12px!important;line-height:1.48!important;max-width:34rem}
+  .profile-pill{min-width:44px!important;min-height:44px!important;padding:4px!important;border-radius:16px!important;display:grid!important;place-items:center!important}
+  .profile-pill>span:last-child{display:none!important}
+  .profile-pill .avatar{width:36px!important;height:36px!important;margin:0!important}
+
+  .grid,.grid-2,.grid-3{grid-template-columns:1fr!important;gap:12px!important}
+  .grid>.card,.hero{grid-column:auto!important}
+  .card,.game-panel{border-radius:20px!important}
+  .hero{padding:16px!important}
+  .metric{font-size:clamp(26px,8vw,38px)!important}
+  .section-title{font-size:19px!important;margin:22px 0 11px!important;line-height:1.18!important}
+
+  .player-hud{
+    display:grid!important;
+    grid-template-columns:58px minmax(0,1fr) auto!important;
+    grid-template-areas:"avatar player streak" "xp xp xp"!important;
+    gap:9px 11px!important;
+    padding:12px!important;
+    border-radius:20px!important;
+    margin-bottom:14px!important;
+  }
+  .hud-avatar{grid-area:avatar;width:58px!important;height:58px!important}
+  .hud-player{grid-area:player;align-self:center}
+  .hud-player strong{font-size:17px!important}
+  .hud-xp{grid-area:xp;min-width:0!important;width:100%!important}
+  .hud-stat{display:none!important}
+  .hud-stat:last-child{display:grid!important;grid-area:streak;align-self:center;min-width:58px!important;padding:7px!important}
+  .hud-stat:last-child b{font-size:16px!important}
+
+  .award-card{min-height:0!important;padding:16px!important;border-radius:22px!important}
+  .award-mascot{width:78px!important;height:78px!important}
+  .award-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9px!important}
+  .award-actions .btn{width:100%!important;justify-content:center!important;text-align:center!important}
+
+  .badge-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .badge{min-height:0!important;padding:12px!important;border-radius:18px!important}
+  .badge-icon.badge-art{height:100px!important;margin-bottom:10px!important}
+  .badge-icon .mascot-svg{width:92px!important;height:92px!important}
+  .badge h3{font-size:13px!important;line-height:1.25!important}
+  .badge p{font-size:10px!important;line-height:1.4!important}
+
+  .field input,.field select,.field textarea{font-size:16px!important;min-height:48px!important}
+  .btn{min-height:44px!important}
+  .btn.small{min-height:40px!important}
+  .form{gap:12px!important}
+  .notice{font-size:11px!important;line-height:1.45!important}
+
+  .modal-back{padding:10px!important;align-items:flex-end!important}
+  .modal{width:100%!important;max-width:none!important;max-height:88vh!important;overflow:auto!important;border-radius:24px 24px 0 0!important;padding:18px!important;padding-bottom:calc(18px + env(safe-area-inset-bottom))!important}
+
+  .table{min-width:620px!important;font-size:11px!important}
+
+  .mobile-nav{
+    position:fixed!important;
+    left:10px!important;right:10px!important;bottom:calc(8px + env(safe-area-inset-bottom))!important;
+    z-index:999!important;
+    display:grid!important;
+    grid-template-columns:repeat(5,minmax(0,1fr))!important;
+    gap:4px!important;
+    padding:7px!important;
+    border:1px solid rgba(255,255,255,.09)!important;
+    border-radius:22px!important;
+    background:rgba(5,16,34,.96)!important;
+    box-shadow:0 14px 34px rgba(0,0,0,.38)!important;
+    backdrop-filter:blur(18px)!important;
+  }
+  .mobile-nav button{
+    min-width:0!important;
+    min-height:54px!important;
+    padding:6px 2px!important;
+    border:0!important;
+    border-radius:16px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:3px!important;
+    background:transparent!important;
+    color:#879bb8!important;
+    font-weight:700!important;
+    box-shadow:none!important;
+  }
+  .mobile-nav button.active{background:rgba(242,198,84,.13)!important;color:#f2c654!important}
+  .mobile-nav-icon{width:20px;height:20px;display:grid;place-items:center}
+  .mobile-nav-icon svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .mobile-nav-label{font-size:9px;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+
+  .login-wrap{padding:12px!important;min-height:100dvh!important}
+  .login-card{grid-template-columns:1fr!important;border-radius:24px!important;overflow:hidden!important}
+  .login-art{min-height:280px!important;padding:28px 22px!important}
+  .login-art h1{font-size:38px!important;line-height:1.02!important}
+  .login-art p{font-size:12px!important;line-height:1.5!important}
+  .login-mascots{margin:16px 0 0!important;gap:3px!important;overflow:hidden}
+  .login-mascot{width:45px!important;flex:0 0 auto}
+  .login-form{padding:22px!important}
+}
+
+@media (max-width:620px){
+  .main{padding-left:10px!important;padding-right:10px!important}
+  .mobile-brand-v7{margin-left:2px;margin-right:2px}
+
+  /* mobile mission route replaces desktop map layout */
+  .quest-map{
+    height:auto!important;
+    min-height:0!important;
+    overflow:visible!important;
+    padding:34px 12px 62px!important;
+    border-radius:28px!important;
+  }
+  .quest-map>.map-sky,
+  .quest-map>.quest-map-canvas>.quest-route,
+  .quest-map .map-path{display:none!important}
+  .quest-map::before,.quest-map::after{display:none!important}
+  .mobile-route-line-v7{
+    display:block!important;
+    position:absolute!important;
+    left:50%!important;
+    top:54px!important;
+    bottom:76px!important;
+    width:0!important;
+    border-left:4px dashed #df4137!important;
+    opacity:.85!important;
+    z-index:1!important;
+    transform:translateX(-50%)!important;
+  }
+  .quest-map>.mission.mobile-mission-v7,
+  .quest-map>.map-node.mobile-mission-v7,
+  .quest-map-canvas>.mission.mobile-mission-v7{
+    position:relative!important;
+    left:auto!important;
+    top:auto!important;
+    transform:none!important;
+    width:min(88%,330px)!important;
+    min-height:126px!important;
+    margin:42px auto!important;
+    z-index:3!important;
+    grid-template-columns:44px minmax(0,1fr)!important;
+    padding:15px 14px 14px!important;
+  }
+  .quest-map>.mission.mobile-mission-v7:nth-of-type(even),
+  .quest-map>.map-node.mobile-mission-v7:nth-of-type(even),
+  .quest-map-canvas>.mission.mobile-mission-v7:nth-of-type(even){transform:translateX(-6%)!important}
+  .quest-map>.mission.mobile-mission-v7:nth-of-type(odd),
+  .quest-map>.map-node.mobile-mission-v7:nth-of-type(odd),
+  .quest-map-canvas>.mission.mobile-mission-v7:nth-of-type(odd){transform:translateX(6%)!important}
+  .quest-map .mobile-mission-v7:hover{transform:none!important}
+  .quest-map .mobile-mission-v7 .mission-dot{width:44px!important;height:44px!important;grid-row:1/3!important;align-self:center!important}
+  .quest-map .mobile-mission-v7 h3{font-size:13px!important;max-width:none!important;padding-right:10px!important}
+  .quest-map .mobile-mission-v7 p{font-size:10px!important;max-width:none!important;padding-right:0!important}
+  .quest-map .mobile-mission-v7>.btn,
+  .quest-map .mobile-mission-v7>.status{grid-column:2!important;justify-self:start!important;margin-top:5px!important}
+  .quest-map .map-guide,
+  .quest-map .map-guide-v4{
+    position:relative!important;
+    left:auto!important;right:auto!important;bottom:auto!important;
+    width:max-content!important;max-width:100%!important;
+    margin:18px auto 0!important;
+    justify-content:center!important;
+    border-radius:18px!important;
+  }
+
+  .player-hud{grid-template-columns:52px minmax(0,1fr) 54px!important;padding:10px!important}
+  .hud-avatar{width:52px!important;height:52px!important}
+
+  .title{font-size:30px!important}
+  .sub{font-size:11px!important}
+
+  .badge-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .mascot-options{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:7px!important}
+  .mascot-option{padding:6px 4px!important}
+
+  .mobile-nav{left:6px!important;right:6px!important;border-radius:20px!important;padding:6px!important}
+  .mobile-nav button{min-height:52px!important}
+}
+
+@media (max-width:390px){
+  .mobile-brand-copy b{font-size:13px!important}
+  .mobile-brand-copy small{font-size:8px!important}
+  .mobile-brand-stars{display:none}
+  .mobile-brand-v7{grid-template-columns:40px 1fr!important}
+  .badge-grid{grid-template-columns:1fr!important}
+  .badge{display:grid!important;grid-template-columns:88px 1fr!important;column-gap:12px!important;align-items:center!important}
+  .badge-icon.badge-art{width:88px!important;height:88px!important;margin:0!important;grid-row:1/3!important}
+  .badge-icon .mascot-svg{width:80px!important;height:80px!important}
+  .badge p{margin:0!important}
+  .award-actions{grid-template-columns:1fr!important}
+}
