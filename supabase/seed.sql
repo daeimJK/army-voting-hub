@@ -1,0 +1,2 @@
+-- The frontend includes current campaign content in data.js as the reviewed fallback seed.
+-- Before production, insert reviewed award, mission and badge JSON into the corresponding tables.
