@@ -64,11 +64,11 @@
     route.setAttribute('class','quest-route');
     route.setAttribute('viewBox','0 0 1000 620');
     route.setAttribute('preserveAspectRatio','none');
-    route.innerHTML='<path d="M115 520 C220 520, 235 385, 330 390 S475 485, 555 365 S675 215, 760 250 S850 140, 905 115" fill="none" stroke="#df3b35" stroke-width="12" stroke-linecap="round" stroke-dasharray="8 18"/>';
+    route.innerHTML='<path d="M140 520 C235 520, 260 392, 335 400 S470 485, 555 365 S680 220, 760 255 S825 155, 860 120" fill="none" stroke="#df3b35" stroke-width="12" stroke-linecap="round" stroke-dasharray="8 18"/>';
     canvas.appendChild(route);
     canvas.insertAdjacentHTML('beforeend','<div class="map-orbit one"></div><div class="map-orbit two"></div><div class="map-stars">✦　·　✦　·　✦　·　✦</div><div class="map-sun"></div><div class="map-hill hill-a"></div><div class="map-hill hill-b"></div>');
 
-    const coords=[[8,67],[20,39],[39,58],[52,28],[68,12],[79,37],[87,9]];
+    const coords=[[14,74],[29,50],[43,68],[55,38],[67,20],[79,45],[86,16]];
     missions.forEach((m,i)=>{
       m.style.setProperty('--mx',`${coords[i%coords.length][0]}%`);
       m.style.setProperty('--my',`${coords[i%coords.length][1]}%`);
