@@ -1,0 +1,180 @@
+/* Calm digital-illustration refinement */
+:root{
+  --iv-blue:#123a6b;
+  --iv-blue-2:#0b2c56;
+  --iv-gold:#efc751;
+  --iv-cream:#f6ecd7;
+  --iv-cream-2:#eadcb8;
+  --iv-red:#df4238;
+  --iv-ink:#10233f;
+}
+
+/* Illustrated logo */
+.brand{
+  display:grid!important;
+  grid-template-columns:70px minmax(0,1fr)!important;
+  gap:12px!important;
+  align-items:center!important;
+  margin-bottom:24px!important;
+  padding:4px 2px 10px!important;
+}
+.brand-mark{display:none!important}
+.bvw-logo-art{
+  position:relative;
+  width:70px;height:70px;
+  border-radius:22px;
+  overflow:hidden;
+  background:
+    repeating-radial-gradient(circle at 22% 18%,rgba(89,163,219,.16) 0 1.2px,transparent 1.2px 5px),
+    linear-gradient(180deg,#184879 0%,#0e315e 100%);
+  border:1px solid rgba(255,255,255,.07);
+  box-shadow:0 10px 20px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.05);
+}
+.bvw-logo-moon{
+  position:absolute;right:10px;top:10px;width:27px;height:27px;border-radius:50%;
+  background:var(--iv-gold);
+}
+.bvw-logo-moon::after{
+  content:"";position:absolute;width:26px;height:26px;border-radius:50%;left:8px;top:-2px;background:#184879;
+}
+.bvw-logo-cloud{position:absolute;background:var(--iv-cream);border-radius:999px}
+.bvw-logo-cloud::before,.bvw-logo-cloud::after{content:"";position:absolute;border-radius:50%;background:inherit}
+.bvw-logo-cloud.cloud-one{left:9px;bottom:14px;width:30px;height:12px}
+.bvw-logo-cloud.cloud-one::before{width:16px;height:16px;left:2px;top:-7px}
+.bvw-logo-cloud.cloud-one::after{width:15px;height:15px;left:13px;top:-8px}
+.bvw-logo-cloud.cloud-two{right:8px;bottom:10px;width:24px;height:10px;opacity:.9}
+.bvw-logo-cloud.cloud-two::before{width:13px;height:13px;left:1px;top:-6px}
+.bvw-logo-cloud.cloud-two::after{width:12px;height:12px;left:10px;top:-6px}
+.bvw-logo-star{position:absolute;left:12px;top:11px;color:var(--iv-gold);font-size:12px}
+.bvw-logo-copy{display:grid;gap:1px;min-width:0}
+.bvw-logo-kicker{font-size:10px;font-weight:800;letter-spacing:.18em;color:var(--iv-gold)}
+.bvw-logo-copy strong{font-family:'Boldonse','Outfit',sans-serif!important;font-size:20px!important;line-height:1.05!important;color:#f7efdf!important;font-weight:400!important}
+.bvw-logo-copy small{font-size:10px!important;line-height:1.2!important;letter-spacing:.06em;color:#91a8c6!important;margin-top:3px}
+
+/* Clear illustrated sidebar */
+.side{
+  padding:18px 16px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:0!important;
+  background:
+    repeating-radial-gradient(circle at 26% 20%,rgba(72,145,202,.09) 0 1px,transparent 1px 6px),
+    linear-gradient(180deg,#0a2448 0%,#071a35 100%)!important;
+  border-right:1px solid rgba(126,182,224,.18)!important;
+  overflow:hidden!important;
+}
+.side::after{
+  content:"";position:absolute;left:-18%;right:-18%;bottom:-105px;height:190px;border-radius:50%;
+  background:#0f3564;opacity:.8;pointer-events:none;
+}
+.side-art-layer{position:absolute;inset:0;pointer-events:none;z-index:0}
+.side-star{position:absolute;color:var(--iv-gold);opacity:.55;font-size:13px}
+.side-star.s1{right:20px;top:128px}.side-star.s2{left:20px;top:330px}
+.side-orbit{position:absolute;width:240px;height:240px;border:1px solid rgba(82,160,218,.08);border-radius:50%;left:-115px;top:180px}
+.brand,.nav,.side-foot{position:relative;z-index:2}
+.nav{display:flex!important;flex-direction:column!important;gap:10px!important}
+.nav button{
+  position:relative!important;
+  min-height:56px!important;
+  padding:14px 16px!important;
+  border-radius:18px!important;
+  justify-content:flex-start!important;
+  color:#c8d5e9!important;
+  font-size:16px!important;
+  font-weight:700!important;
+  background:rgba(5,20,42,.58)!important;
+  border:1px solid rgba(255,255,255,.045)!important;
+  box-shadow:none!important;
+}
+.nav button:hover{background:rgba(11,41,78,.84)!important;color:#fff!important;transform:none!important}
+.nav button.active{
+  background:linear-gradient(180deg,#f2cd61 0%,#e9bd48 100%)!important;
+  color:#10233f!important;
+  border-color:#ffe69b!important;
+  box-shadow:0 5px 0 #846b25!important;
+}
+.side-foot{
+  margin-top:auto!important;
+  display:grid!important;
+  gap:4px!important;
+  padding:12px 13px!important;
+  border-radius:15px!important;
+  background:rgba(5,18,38,.62)!important;
+  border:1px solid rgba(255,255,255,.05)!important;
+  color:#9eb0c8!important;
+  font-size:11px!important;
+  line-height:1.35!important;
+}
+.side-foot strong{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--iv-gold)}
+
+/* Calm illustrated map */
+.quest-map{
+  padding:22px!important;
+  overflow:hidden!important;
+  background:linear-gradient(180deg,#0c2f5b 0%,#092448 100%)!important;
+  border:1px solid rgba(88,156,211,.20)!important;
+  box-shadow:inset 0 0 0 6px rgba(4,16,34,.12),0 18px 36px rgba(0,0,0,.20)!important;
+}
+.quest-map-canvas{
+  height:620px!important;
+  min-width:0!important;
+  overflow:hidden!important;
+  border-radius:26px!important;
+  background:
+    radial-gradient(circle at 82% 10%,rgba(239,199,81,.08),transparent 18%),
+    repeating-radial-gradient(circle at 22% 24%,rgba(80,157,215,.12) 0 1.5px,transparent 1.5px 7px),
+    linear-gradient(180deg,#174a80 0%,#103865 72%,#0e315a 100%)!important;
+}
+.map-illustration-layer{position:absolute;inset:0;pointer-events:none;z-index:1}
+.map-cloud{position:absolute;display:block;border-radius:50%;background:rgba(40,99,157,.45)}
+.map-cloud.cloud-left{left:-7%;bottom:-62px;width:54%;height:150px}
+.map-cloud.cloud-right{right:-8%;bottom:-48px;width:50%;height:120px;background:rgba(29,79,132,.54)}
+.map-small-star{position:absolute;color:var(--iv-gold);font-size:14px;opacity:.85}
+.map-small-star.ms1{left:18%;top:12%}.map-small-star.ms2{right:16%;top:35%}
+.map-stars{opacity:.65!important;letter-spacing:8px!important;font-size:14px!important}
+.map-orbit{opacity:.45!important}
+.map-sun{width:76px!important;height:76px!important;opacity:.95!important}
+.map-sun:after{width:73px!important;height:73px!important;left:23px!important;background:#174a80!important}
+.quest-route path{stroke:var(--iv-red)!important;stroke-width:10!important;stroke-dasharray:7 16!important;filter:none!important}
+
+/* Mission cards are soft illustrated clouds */
+.quest-map .mission.mission-cloud{
+  width:clamp(195px,18vw,235px)!important;
+  min-height:120px!important;
+  padding:17px 17px 15px!important;
+  border-radius:30px!important;
+  overflow:visible!important;
+  background:linear-gradient(180deg,var(--iv-cream) 0%,var(--iv-cream-2) 100%)!important;
+  border:1px solid rgba(255,255,255,.50)!important;
+  box-shadow:0 10px 20px rgba(5,16,34,.20),0 4px 0 rgba(17,52,91,.12)!important;
+}
+.quest-map .mission.mission-cloud::before,
+.quest-map .mission.mission-cloud::after{
+  content:"";position:absolute;z-index:-1;border-radius:50%;background:var(--iv-cream);
+}
+.quest-map .mission.mission-cloud::before{width:72px;height:50px;left:20px;top:-14px}
+.quest-map .mission.mission-cloud::after{width:64px;height:46px;right:22px;top:-10px;background:#f2e6ca}
+.quest-map .mission.mission-cloud:hover{transform:translate(-50%,-53%)!important;border-color:#fff!important}
+.quest-map .mission.mission-cloud h3{color:var(--iv-ink)!important;font-size:14px!important;line-height:1.22!important;font-weight:800!important;padding-right:18px}
+.quest-map .mission.mission-cloud p{color:#4e607d!important;font-size:10.8px!important;line-height:1.42!important;max-width:88%}
+.mission-cloud-accent{position:absolute;right:15px;top:12px;color:#d49c17;font-size:13px;z-index:2}
+.quest-map .mission-dot{
+  background:linear-gradient(180deg,#ed5b4e,#dc4138)!important;
+  border:2px solid #ffd0ca!important;
+  box-shadow:0 4px 0 #8c2828!important;
+}
+.quest-map .mission .btn{font-size:11px!important;padding:9px 12px!important;border-radius:12px!important}
+.quest-map .mission .status{font-size:10px!important}
+.map-legend{background:rgba(6,20,42,.76)!important;border:1px solid rgba(255,255,255,.06)!important;padding:7px 11px!important;font-size:10px!important}
+
+/* keep headings distinct */
+.title,.section-title,.login-art h1,.modal h2{font-family:'Boldonse','Outfit',sans-serif!important;font-weight:400!important;letter-spacing:0!important}
+
+@media(max-width:1100px){
+  .quest-map{overflow:auto!important}
+  .quest-map-canvas{min-width:920px!important}
+  .quest-map .mission.mission-cloud{width:210px!important}
+}
+@media(max-width:900px){
+  .brand{grid-template-columns:62px minmax(0,1fr)!important}.bvw-logo-art{width:62px;height:62px}.bvw-logo-copy strong{font-size:17px!important}
+}
