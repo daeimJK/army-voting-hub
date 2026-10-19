@@ -9,19 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./game-ui.css" />
-  <link rel="stylesheet" href="./fast-ui.css?v=1" />
+  <link rel="stylesheet" href="./fast-ui.css?v=2" />
 </head>
 <body>
-  <div id="app" class="app-shell"></div>
+  <div id="app" class="app-shell">
+    <div class="boot-screen"><div class="boot-card"><div class="boot-dot"></div><b>Bangtan V Warriors</b><span>Loading mission board…</span></div></div>
+  </div>
   <div id="toast-root" aria-live="polite" aria-atomic="true"></div>
   <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script defer src="./auth-redirect-patch.js"></script>
   <script defer src="./config.js"></script>
   <script defer src="./data.js"></script>
   <script defer src="./app-v2.js"></script>
-  <script defer src="./ui-fast.js?v=1"></script>
+  <script defer src="./ui-fast.js?v=2"></script>
 </body>
 </html>
